@@ -10,21 +10,28 @@ function NavBar() {
 
 function Home() {
   return (
-    <div id="home">
+    <div id="home" data-testid="home">
       <h1>Home</h1>
     </div>
   );
 }
 
-{/* write an <About> component here */}
+function About() {
+  return (
+    <div id="about" data-testid="about">
+      <h2>About</h2>
+      <p>This is the About component.</p>
+    </div>
+  );
+}
 
 
 function App() {
   return (
     <div>
       <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      <Home />
+      <About />
     </div>
   );
 }
